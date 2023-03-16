@@ -14,5 +14,3 @@ mono_nucleotide_data['proportion'] = mono_nucleotide_data['proportion'].str.rstr
 
 # Prints out Data Table 
 mono_nucleotide_data
-
-	
