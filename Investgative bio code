@@ -1,0 +1,16 @@
+import seaborn as sb
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+from scipy.stats import chi2_contingency
+from scipy.stats import chi2
+
+# upload csv file by using pd.read_csv fuction must import pandas as pd for this function 
+mono_nucleotide_data = pd.read_csv("final_nucleotide_composition.csv")
+
+# Removes the % under the proportion data set to make it an intger
+mono_nucleotide_data['proportion'] = mono_nucleotide_data['proportion'].str.rstrip('%').astype('float')
+
+# Prints out Data Table 
+mono_nucleotide_data
